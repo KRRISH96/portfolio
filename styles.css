@@ -448,7 +448,7 @@ footer p {
   }
   .fa-times:hover {
     transform: rotate(180deg);
-    transition: all 0.5s;
+    transition: all 0.4s;
   }
   #project-item {
       flex-wrap: wrap;

@@ -15,12 +15,23 @@ menuButton.addEventListener('click', displayMenu);
 // Adds header background on scroll
 const head = document.querySelector('header');
 function headerBackground() {
-  if(document.documentElement.scrollTop>150) {
+  if(window.scrollY>150) {
     head.classList.add('header-bg');
   } else {
     head.classList.remove('header-bg');
   }
-  // console.log(home.offsetTop+e.offsetHeight);
-  // console.log(home.offsetHeight);
 }
-window.addEventListener('scroll', headerBackground)
+window.addEventListener('scroll', headerBackground);
+
+// Adds active class to navigation links on click and removes toggle class as well
+const navLinks = document.querySelectorAll('#main-nav ul li a[href^="#"]');
+const sectionId = document.querySelectorAll('section');
+const htmlBody = document.querySelector('html body');
+//Function that changes active state on click
+function activateLink() {
+  navLinks.forEach(link=>link.classList.remove('active'));
+  this.classList.add('active');
+  navigation.classList.add('toggle');
+  menuButton.classList.remove('fa-times');
+}
+navLinks.forEach(link=>link.addEventListener('click',activateLink));
