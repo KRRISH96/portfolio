@@ -66,11 +66,14 @@ header {
   text-transform: uppercase;
   color: #00bbf0;
 }
-#main-nav ul li a:hover,.active {
+#main-nav ul li a:hover {
   color: #ff4057;
   border-bottom: 0.15em solid #f86254;
   border-radius: 0.8em;
   transition: all 0.3s;
+}
+.active {
+  color: #f86254;
 }
 #menu-button {
   display: none;
