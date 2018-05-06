@@ -72,8 +72,8 @@ header {
   border-radius: 0.8em;
   transition: all 0.3s;
 }
-.active {
-  color: #f86254;
+#main-nav ul li a.active {
+  color: #ff4057;
 }
 #menu-button {
   display: none;
@@ -451,7 +451,7 @@ footer p {
   }
   .fa-times:hover {
     transform: rotate(180deg);
-    transition: all 0.4s;
+    transition: all 0.5s;
   }
   #project-item {
       flex-wrap: wrap;
