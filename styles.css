@@ -439,8 +439,9 @@ footer p {
     /* margin: 1em; */
   }
   .overlay ul li a {
-    margin: 1em;
-    font-size: 1.4em;
+    margin: 0.6em;
+    font-size: 1.3em;
+    font-weight: 600;
   }
   .toggle {
     transform: translate(100%,-100%);
@@ -465,7 +466,7 @@ footer p {
   }
   #menu-button i {
     display: flex;
-    font-size: 2em;;
+    font-size: 2.4em;;
     justify-content: center;
     align-items: center;
     color: #ccc;
@@ -473,7 +474,7 @@ footer p {
   }
   .fa-times:hover {
     transform: rotate(180deg);
-    transition: all 0.5s;
+    transition: all 0.6s;
   }
   #project-item {
       flex-wrap: wrap;
