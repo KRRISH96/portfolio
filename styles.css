@@ -310,7 +310,6 @@ header {
 }
 #contact-section {
   border: 1px dashed rgba(253,184,125,1);
-  min-height: 30vh;
   padding: 1em;
   font-size: 2em;
   text-align: center;
@@ -384,6 +383,9 @@ footer p {
   html,body {
     font-size: 8px;
   }
+  #contact {
+    min-height: 78vh
+  }
 }
 @media screen and (max-width: 770px) {
   html,body #home {
@@ -391,6 +393,12 @@ footer p {
   }
   #my-title {
     max-width: 600px;
+  }
+  #home {
+    min-height: 87vh;
+  }
+  #contact {
+    min-height: 75vh
   }
   .overlay {
     display: flex;
