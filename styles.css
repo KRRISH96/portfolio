@@ -425,7 +425,11 @@ footer p {
     display: flex;
     justify-content: center;
     /* align-items: center; */
+    /* margin: 1em; */
+  }
+  .overlay ul li a {
     margin: 1em;
+    font-size: 1.4em;
   }
   .toggle {
     transform: translate(100%,-100%);
@@ -439,7 +443,6 @@ footer p {
     right: 1.35em;
     top: 0.95em;
     font-size: 1.5em;
-    color: #f86254;
     cursor: pointer;
   }
 
@@ -469,5 +472,31 @@ footer p {
   #project-item img {
     width: 25em;
     height: 20em;
+  }
+}
+
+@media screen and (min-height: 670px) {
+  #home {
+    min-height: 90vh;
+  }
+}
+@media screen and (min-height: 873px) {
+  #home {
+    min-height: 94vh;
+  }
+}
+@media screen and (min-height: 533px) {
+  #contact {
+    min-height: 82vh;
+  }
+}
+@media screen and (min-height: 703px) {
+  #contact {
+    min-height: 85vh;
+  }
+}
+@media screen and (min-height: 830px) {
+  #contact {
+    min-height: 88vh;
   }
 }
