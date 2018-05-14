@@ -26,7 +26,6 @@ window.addEventListener('scroll', headerBackground);
 // Adds active class to navigation links on click and removes toggle class as well
 const navLinks = document.querySelectorAll('#main-nav ul li a[href^="#"]');
 const sectionId = document.querySelectorAll('section');
-const htmlBody = document.querySelector('html body');
 //Function that changes active state on click
 function activateLink() {
   navLinks.forEach(link=>link.classList.remove('active'));
