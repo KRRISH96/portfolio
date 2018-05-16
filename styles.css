@@ -91,7 +91,7 @@ header {
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;/*check later*/
-  min-height: 84vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   text-align: center;
@@ -165,14 +165,6 @@ header {
   align-items: center;
   justify-content: center;
 }
-/* #my-intro h2 {
-  text-align: center;
-  margin-bottom: 1em;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #09194f;
-  letter-spacing: 0.1em;
-} */
 #my-intro img {
   max-width: 5em;
   max-height: 5em;
@@ -310,7 +302,6 @@ header {
 /********* CONTACT  *************/
 #contact {
   min-height: 77vh;
-  /* padding-bottom: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,7 +397,7 @@ footer p {
     max-width: 600px;
   }
   #home {
-    min-height: 87vh;
+    min-height: 88vh;
   }
   #contact {
     min-height: 75vh
@@ -419,8 +410,6 @@ footer p {
     height: 100%;
     top: 0;
     left: 0;
-    /* bottom: 0;
-    right: 0; */
     align-items: center;
     justify-content: center;
     z-index: 2;
@@ -435,8 +424,6 @@ footer p {
   .overlay ul li {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* margin: 1em; */
   }
   .overlay ul li a {
     margin: 0.6em;
