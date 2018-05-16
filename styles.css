@@ -7,6 +7,9 @@ html,body {
   overflow-x: hidden;
   width: 100%;
 }
+body {
+  font-family: Helvetica Neue,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
+}
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -88,7 +91,7 @@ header {
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;/*check later*/
-  min-height: 85vh;
+  min-height: 84vh;
   display: flex;
   align-items: center;
   text-align: center;
@@ -116,7 +119,7 @@ header {
   line-height: 1.3em;
   letter-spacing: 0.1em;
   width: auto;
-  font-weight: 100;
+  font-weight: 400;
 }
 #my-title blockquote {
   font-size: 1.8rem;
@@ -147,6 +150,7 @@ header {
   background: rgba(246,246,233,0.5);
   color: #333644;
   font-size: 1.6em;
+  font-weight: 400;
 }
 #about-section {
   line-height: 1.2em;
@@ -161,7 +165,14 @@ header {
   align-items: center;
   justify-content: center;
 }
-
+/* #my-intro h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #09194f;
+  letter-spacing: 0.1em;
+} */
 #my-intro img {
   max-width: 5em;
   max-height: 5em;
@@ -204,7 +215,14 @@ header {
   transition: all 0.4s;
   color: #d5f7ff;
 }
-
+#my-skills ul li img {
+  width: 1.1em;
+  height: 1em;
+  padding: 0 0.3em;
+}
+#my-skills ul li i {
+  padding: 0 0.3em;
+}
 /********* PROJECTS *************/
 #projects {
   min-height: 84vh;
@@ -291,7 +309,7 @@ header {
 
 /********* CONTACT  *************/
 #contact {
-  min-height: 80vh;
+  min-height: 77vh;
   /* padding-bottom: 0; */
   display: flex;
   align-items: center;
@@ -303,7 +321,6 @@ header {
 }
 #contact-section {
   border: 1px dashed rgba(253,184,125,1);
-  min-height: 30vh;
   padding: 1em;
   font-size: 2em;
   text-align: center;
@@ -377,16 +394,22 @@ footer p {
   html,body {
     font-size: 8px;
   }
+  #contact {
+    min-height: 78vh
+  }
 }
 @media screen and (max-width: 770px) {
   html,body #home {
     font-size: 7px;
   }
-  #home {
-    min-height: 88vh;
-  }
   #my-title {
     max-width: 600px;
+  }
+  #home {
+    min-height: 87vh;
+  }
+  #contact {
+    min-height: 75vh
   }
   .overlay {
     display: flex;
@@ -396,6 +419,8 @@ footer p {
     height: 100%;
     top: 0;
     left: 0;
+    /* bottom: 0;
+    right: 0; */
     align-items: center;
     justify-content: center;
     z-index: 2;
@@ -411,7 +436,12 @@ footer p {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    margin: 1em;
+    /* margin: 1em; */
+  }
+  .overlay ul li a {
+    margin: 0.6em;
+    font-size: 1.3em;
+    font-weight: 600;
   }
   .toggle {
     transform: translate(100%,-100%);
@@ -425,7 +455,6 @@ footer p {
     right: 1.35em;
     top: 0.95em;
     font-size: 1.5em;
-    color: #f86254;
     cursor: pointer;
   }
 
@@ -437,7 +466,7 @@ footer p {
   }
   #menu-button i {
     display: flex;
-    font-size: 2em;;
+    font-size: 2.4em;;
     justify-content: center;
     align-items: center;
     color: #ccc;
@@ -455,5 +484,31 @@ footer p {
   #project-item img {
     width: 25em;
     height: 20em;
+  }
+}
+
+@media screen and (min-height: 670px) {
+  #home {
+    min-height: 90vh;
+  }
+}
+@media screen and (min-height: 873px) {
+  #home {
+    min-height: 94vh;
+  }
+}
+@media screen and (min-height: 533px) {
+  #contact {
+    min-height: 82vh;
+  }
+}
+@media screen and (min-height: 703px) {
+  #contact {
+    min-height: 85vh;
+  }
+}
+@media screen and (min-height: 830px) {
+  #contact {
+    min-height: 88vh;
   }
 }
