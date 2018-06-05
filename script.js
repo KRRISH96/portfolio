@@ -15,7 +15,7 @@ menuButton.addEventListener('click', displayMenu);
 // Adds header background on scroll
 const head = document.querySelector('header');
 function headerBackground() {
-  if(window.scrollY>150) {
+  if(window.scrollY>300) {
     head.classList.add('header-bg');
   } else {
     head.classList.remove('header-bg');
